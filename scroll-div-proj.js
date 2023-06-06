@@ -1,3 +1,9 @@
+// function for more projects button
+function goGit() {
+    window.open("https://github.com/shadow855", "_blank");
+}
+
+// scroll func
 var scrollDiv1s = document.querySelectorAll('.scroll-div1');
 
 function handleScroll() {
