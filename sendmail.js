@@ -4,7 +4,9 @@ function goBack() {
   var resetButton = document.getElementById("myForm").querySelector("input[type='reset']");
   resetButton.click();
   
+   setTimeout(() => {
     window.location.href = "index.html";
+  }, 500);
 }
 
 // mailto js
