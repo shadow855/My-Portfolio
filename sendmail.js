@@ -2,6 +2,9 @@
 
 function goBack() {
   window.location.href = "index.html";
+
+  var resetButton = document.getElementById("myForm").querySelector("input[type='reset']");
+  resetButton.click();
 }
 
 // mailto js
