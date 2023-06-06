@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="sendmail.css">
+</head>
+
+<body>
+    <section class="contact_section">
+        <form id="myForm">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required>
+
+            <label for="query">Query:</label>
+            <textarea id="query" name="query" rows="5" placeholder="Enter Your Query" required></textarea>
+            <div class="btn_holder">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+            <button class="goback" onclick="goBack()">Go Back To Portfolio</button>
+
+        </form>
+    </section>
+
+    <script src="sendmail.js"></script>
+
+</body>
+
+</html>
