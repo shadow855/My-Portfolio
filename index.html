@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
+</head>
+
+<body>
+    <audio id="myAudio">
+        <!-- Add additional source elements for different audio formats (e.g., WAV, OGG) -->
+    </audio>
+    <div id="cursor"></div>
+    <div id="body"></div>
+    <!-- <div class="first-container"> -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/icons8-avatar.gif" alt="logo_img" class="logo-img">
+            <span id="name">Shadow</span>
+        </div>
+        <ul class="nav_ul">
+            <li class="nav_li"><a href="index.html">Home</a></li>
+            <li class="nav_li"><a href="qualification.html">Qualifications</a></li>
+            <li class="nav_li"><a href="projects.html">Projects</a></li>
+            <li class="nav_li"><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Add a menu icon for mobile view -->
+        <div class="menu-icon">
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+        </div>
+    </nav>
+
+    <div class="intro-main">
+        <div class="intro-text">
+            <h1>Hello.</h1>
+            <p>I'm <span>Raiyan Mushtaque Ansari. </span>Front-End Developer, Unity 3D Learning Enthusiast. Always
+                Learning.</p>
+            <div class="link-icons">
+                <a href="https://github.com/shadow855" target="_blank">
+                    <div class="icons" style="background: center / cover no-repeat url('Images/icons8-github.gif');">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/raiyan-mushtaque-110824254" target="_blank">
+                    <div class="icons" style="background: center / cover no-repeat url('Images/icons8-linkedin.gif');">
+                    </div>
+                </a>
+                <a href="mailto:raiyanmushtaque@gmail.com" target="_blank">
+                    <div class="icons" style="background: center / cover no-repeat url('Images/icons8-gmail.gif');">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/shadow_855/?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                    <div class="icons" style="background: center / cover no-repeat url('Images/icons8-instagram.gif');">
+                    </div>
+                </a>
+                <a href="https://youtube.com/@shadowgames9719" target="_blank">
+                    <div class="icons" style="background: center / cover no-repeat url('Images/icons8-youtube.gif');">
+                    </div>
+                </a>
+            </div>
+            <button id="contact-btn" onclick="goToContact()">Contact Me</button>
+        </div>
+
+        <div class="intro-img">
+            <img src="Images/MyGif.gif" alt="introgif" id="intro-gif">
+
+        </div>
+    </div>
+    <div class="scroll-div1">
+        <div class="my-works-h2 scroll-div">
+            <h2>Here's what I do</h2>
+        </div>
+    </div>
+
+    <div class="work-1 scroll-div1">
+        <div class="work-1-img scroll-div">
+            <img src="Images/6L8E.gif" alt="work-1-img">
+        </div>
+        <div class="work-1-desc">
+            <h3 class="scroll-div">Web Development</h3>
+            <div class="work-1-desc-icon-main-div scroll-div">
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-html-480.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-css-480.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-javascript-480.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-node-js-240.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-mysql-logo-480.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-github-480.png');"></div>
+                <div class="work-1-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-express-js-500.png');"></div>
+            </div>
+            <div class="work-1-desc-points-div scroll-div">
+                <p class="work-1-desc-p">⚡Building responsive website front end using HTML-5, CSS-3 and JAVASCRIPT</p>
+                <p class="work-1-desc-p">⚡Creating application backend in Node, MySql</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-2 scroll-div1">
+        <div class="work-2-desc">
+            <h3 class="scroll-div">Unity3D Development</h3>
+            <div class="work-2-desc-icon-main-div scroll-div">
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-unity-500.png');"></div>
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-c-100.png');"></div>
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-cplus-500.png');"></div>
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-csharp-500.png');"></div>
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-blender-480.png');"></div>
+                <div class="work-2-desc-icons"
+                    style="background: center / cover no-repeat url('Images/icons8-adobe-photoshop-480.png');"></div>
+            </div>
+            <div class="work-2-desc-points-div scroll-div">
+                <p class="work-2-desc-p">⚡Building 3D models using Blender and Photoshop</p>
+                <p class="work-2-desc-p">⚡Creating 3D animations in Blender</p>
+                <p class="work-2-desc-p">⚡Creating 3D and 2D games using Unity3D</p>
+            </div>
+        </div>
+        <div class="work-2-img scroll-div">
+            <img src="Images/GYkB.gif" alt="work-2-img">
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <footer>Made with ❤️ by Shadow~</footer>
+
+    <script src="cursor.js"></script>
+    <script src="dayaudio.js"></script>
+    <script src="navbar_toggle.js"></script>
+    <script src="scroll-div-home.js"></script>
+</body>
+
+</html>
