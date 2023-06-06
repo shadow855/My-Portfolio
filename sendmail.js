@@ -1,10 +1,10 @@
 // contact btn function
 
 function goBack() {
-  window.location.href = "index.html";
-
   var resetButton = document.getElementById("myForm").querySelector("input[type='reset']");
   resetButton.click();
+  
+    window.location.href = "index.html";
 }
 
 // mailto js
