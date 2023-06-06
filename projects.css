@@ -82,14 +82,29 @@ body {
     margin-right: 40px;
 }
 
-.proj-container>div {
+.anim {
+    will-change: transform;
+    display: flex;
     background-color: rgb(41, 42, 45);
     border-radius: 5px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 150px;
     padding: 15px;
+    animation: anim 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .proj-cards {
@@ -148,7 +163,7 @@ body {
     width: 40px;
 }
 
-.more-proj-div{
+.more-proj-div {
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -165,30 +180,15 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-  }
-  
-  #proj-btn:hover {
-    box-shadow: 0px 5px 10px rgb(252, 16, 86);
-  
-  }
-
-.anim {
-    will-change: transform;
-    display: none;
-    animation: anim 1.5s ease-in-out forwards;
-    opacity: 0;
 }
 
-@keyframes anim {
-    0% {
-        transform: translateY(10%);
-        opacity: 0;
-    }
+#proj-btn:hover {
+    box-shadow: 0px 5px 10px rgb(252, 16, 86);
 
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
+}
+
+.hello {
+    display: none;
 }
 
 /* responsiveness */
@@ -197,7 +197,7 @@ body {
         place-items: center;
     }
 
-    .proj-container>div {
+    .anim {
         width: 400px;
     }
 }
@@ -255,7 +255,7 @@ body {
         flex-direction: column;
     }
 
-    .proj-container>div {
+    .anim {
         width: 320px;
         height: 180px;
     }
@@ -266,7 +266,7 @@ body {
         width: 350px;
     }
 
-    .proj-container>div {
+    .anim {
         width: 280px;
         height: 200px;
     }
@@ -277,7 +277,7 @@ body {
         width: 320px;
     }
 
-    .proj-container>div {
+    .anim {
         width: 250px;
         height: 200px;
     }
@@ -288,7 +288,7 @@ body {
         width: 300px;
     }
 
-    .proj-container>div {
+    .anim {
         width: 230px;
         height: 200px;
     }
@@ -299,7 +299,7 @@ body {
         width: 250px;
     }
 
-    .proj-container>div {
+    .anim {
         width: 200px;
         height: 200px;
     }
@@ -310,11 +310,12 @@ body {
         width: 250px;
     }
 
-    .proj-container>div {
+    .anim {
         width: 170px;
         height: 250px;
     }
-    #proj-btn{
+
+    #proj-btn {
         font-size: 20px;
         width: 200px;
     }
